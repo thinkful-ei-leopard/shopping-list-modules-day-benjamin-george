@@ -15,7 +15,18 @@ const addItem = function (name) {
   catch (e) {
     console.log( `Cannot add item: ${e.message}`);
   }
-}
+};
+
+const findAndToggleChecked = function (id) {
+  let toToggle = findById(id).indexOf();
+  if (this.items[toToggle].checked === false) {
+    this.items[toToggle].checked = true; 
+  } else {
+    this.items[toToggle].checked = false;
+  }
+};
+
+
 
 
   
